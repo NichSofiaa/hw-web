@@ -12,55 +12,206 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <header>
-      <p>Web<span>Studio</span></p>
-      <nav>
-        <ul>
-          <li><a href="#">Студія</a></li>
-          <li><a href="#">Портфоліо</a></li>
-          <li><a href="#">Контакти</a></li>
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__nav-wraper">
+          <p class="logo">
+            <a class="logo__link" href="./index.html"
+              >Web<span class="logo--header">Studio</span></a
+            >
+          </p>
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a
+                  class="navigation__link navigation__link--active"
+                  href="./index.html"
+                  >Студія</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <ul class="header__contacts-list">
+          <li class="header__contacts-item">
+            <a class="headed__contacts-link" href="mailto:info@devstudio.com">
+              <svg
+                class="header__icon header__icon--first"
+                width="16"
+                height="12"
+              >
+                <use href="./images/icons.svg#icon-email-2"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="header__contacts-item">
+            <a class="headed__contacts-link" href="tel:+390961111111">
+              <svg
+                class="header__icon header__icon--second"
+                width="10"
+                height="16"
+              >
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +39 096 111 11 11</a
+            >
+          </li>
         </ul>
-      </nav>
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+390961111111">+39 096 111 11 11</a></li>
-      </ul>
+      </div>
     </header>
 
     <main>
-      <section>
-        <h1>
-          Ефективні рішення для <br />
-          вашого бізнесу
-        </h1>
+      <section class="hero">
+        <div class="hero__wraper">
+          <div class="container">
+            <h1 class="hero__h1">
+              Ефективні рішення для <br />
+              вашого бізнесу
+            </h1>
+            <button class="hero__btn">Замовити послугу</button>
+          </div>
+        </div>
       </section>
+
       <section>
         <h2>Наші особливості</h2>
         <ul>
           <li>
             <h3>Увага до деталей</h3>
-            <p></p>
+            <p>
+              Ідейні міркування, і навіть початок повсякденної роботи з
+              формування позиції.
+            </p>
           </li>
           <li>
             <h3>Пунктуальність</h3>
-            <p></p>
+            <p>
+              Завдання організації, особливо рамки і місце навчання кадрів тягне
+              у себе.
+            </p>
           </li>
           <li>
             <h3>Палунвання</h3>
-            <p></p>
+            <p>
+              Так само консультація з широким активом значною мірою зумовлює.
+            </p>
           </li>
           <li>
             <h3>Сучасні технології</h3>
-            <p></p>
+            <p>
+              Значимість цих проблем настільки очевидна, що реалізація планових
+              завдань.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Чим ми займаємося</h2>
+        <ul>
+          <li>
+            <img
+              src="./images/td-1-x1.jpg"
+              alt="Програмування"
+              width="370"
+              height="294"
+            />
+          </li>
+          <li>
+            <img
+              src="./images/td-2-x1.jpg"
+              alt="Мобільні додатки"
+              width="370"
+              height="294"
+            />
+          </li>
+          <li>
+            <img
+              src="./images/td-3-x1.jpg"
+              alt="Кольорова паннель"
+              width="370"
+              height="294"
+            />
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Наша команда</h2>
+        <ul>
+          <li>
+            <img
+              src="./images/tm-1-x1.jpg"
+              alt="Особиста фотографія Ігоря Дем'яненка"
+              width="270"
+              height="260"
+            />
+            <p>Ігор Дем'яненко</p>
+            <p>Product Designer</p>
+          </li>
+          <li>
+            <img
+              src="./images/tm-2-x1.jpg"
+              alt="Особиста фотографія Ольги Рєпіної"
+              width="270"
+              height="260"
+            />
+            <p>Ольга Рєпіна</p>
+            <p>Frontend Developer</p>
+          </li>
+          <li>
+            <img
+              src="./images/tm-3-x1.jpg"
+              alt="Особиста фотографія Миколи Тарасова"
+              width="270"
+              height="260"
+            />
+            <p>Микола Тарасов</p>
+            <p>Marketing</p>
+          </li>
+          <li>
+            <img
+              src="./images/tm-4-x1.jpg"
+              alt="Особиста фотографія Михайла Єрмакова"
+              width="270"
+              height="260"
+            />
+            <p>Михайло Єрмаков</p>
+            <p>UI Designer</p>
           </li>
         </ul>
       </section>
     </main>
     <footer>
-
+      <p class="logo">
+        <a href="./index.html">Web<span class="logo--footer">Studio</span></a>
+      </p>
+      <address>м. Київ, пр-т Лесі Українки, 26</address>
+      <ul>
+        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li><a href="tel:+390961111111">+39 096 111 11 11</a></li>
+      </ul>
     </footer>
   </body>
 </html>
