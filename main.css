@@ -69,6 +69,10 @@ body {
   color: #212121;
 }
 
+section {
+  margin-bottom: 94px;
+}
+
 .container {
   margin: 0 auto;
   padding: 0 15px;
@@ -238,4 +242,26 @@ body {
 .hero__btn:hover,
 .hero__btn:focus {
   transform: scale(1.05);
+}
+
+/* Todo */
+.todo {
+}
+
+.todo__title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.todo__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo__item {
 }
