@@ -244,8 +244,70 @@ section {
   transform: scale(1.05);
 }
 
+/* Ourfeatures */
+.ourfeatures {
+}
+
+.ourfeatures__blok-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
+.ourfeatures__icon {
+  width: 70px;
+  height: 70px;
+}
+
+.ourfeatures__title {
+}
+.ourfeatures__blok {
+  width: 270px;
+}
+
+.ourfeatures__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ourfeatures__item {
+}
+
+.ourfeatures__item-title {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #212121;
+}
+
+.ourfeatures__item-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+
 /* Todo */
 .todo {
+}
+
+.todo__audio{
+  margin: 0 auto 50px;
+  width: 300px;
 }
 
 .todo__title {

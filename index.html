@@ -23,6 +23,7 @@
 
     <link rel="stylesheet" href="./main.css" />
   </head>
+
   <body>
     <header class="header">
       <div class="container header__container">
@@ -94,42 +95,78 @@
         </div>
       </section>
 
-      <section>
-        <h2>Наші особливості</h2>
-        <ul>
-          <li>
-            <h3>Увага до деталей</h3>
-            <p>
-              Ідейні міркування, і навіть початок повсякденної роботи з
-              формування позиції.
-            </p>
-          </li>
-          <li>
-            <h3>Пунктуальність</h3>
-            <p>
-              Завдання організації, особливо рамки і місце навчання кадрів тягне
-              у себе.
-            </p>
-          </li>
-          <li>
-            <h3>Палунвання</h3>
-            <p>
-              Так само консультація з широким активом значною мірою зумовлює.
-            </p>
-          </li>
-          <li>
-            <h3>Сучасні технології</h3>
-            <p>
-              Значимість цих проблем настільки очевидна, що реалізація планових
-              завдань.
-            </p>
-          </li>
-        </ul>
+      <section class="ourfeatures">
+        <div class="container">
+          <h2 class="ourfeatures__title visually-hidden">Наші особливості</h2>
+          <ul class="ourfeatures__list">
+            <li class="ourfeatures__item">
+              <div class="ourfeatures__blok">
+                <div class="ourfeatures__blok-icon">
+                  <svg class="ourfeatures__icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-antenna"></use>
+                  </svg>
+                </div>
+                <h3 class="ourfeatures__item-title">Увага до деталей</h3>
+                <p class="ourfeatures__item-text">
+                  Ідейні міркування, і навіть початок повсякденної роботи з
+                  формування позиції.
+                </p>
+              </div>
+            </li>
+            <li class="ourfeatures__item">
+              <div class="ourfeatures__blok">
+                <div class="ourfeatures__blok-icon">
+                  <svg class="ourfeatures__icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-clock"></use>
+                  </svg>
+                </div>
+                <h3 class="ourfeatures__item-title">Пунктуальність</h3>
+                <p class="ourfeatures__item-text">
+                  Завдання організації, особливо рамки і місце навчання кадрів
+                  тягне у себе.
+                </p>
+              </div>
+            </li>
+            <li class="ourfeatures__item">
+              <div class="ourfeatures__blok">
+                <div class="ourfeatures__blok-icon">
+                  <svg class="ourfeatures__icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-diagram"></use>
+                  </svg>
+                </div>
+                <h3 class="ourfeatures__item-title">Палунвання</h3>
+                <p class="ourfeatures__item-text">
+                  Так само консультація з широким активом значною мірою
+                  зумовлює.
+                </p>
+              </div>
+            </li>
+            <li class="ourfeatures__item">
+              <div class="ourfeatures__blok">
+                <div class="ourfeatures__blok-icon">
+                  <svg class="ourfeatures__icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-astronaut"></use>
+                  </svg>
+                </div>
+                <h3 class="ourfeatures__item-title">Сучасні технології</h3>
+                <p class="ourfeatures__item-text">
+                  Значимість цих проблем настільки очевидна, що реалізація
+                  планових завдань.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="todo">
         <div class="container">
           <h2 class="todo__title">Чим ми займаємося</h2>
+          <div class="todo__audio">
+            <audio controls src="./audio/km.mp3">
+              <a href="./audio/km.mp3"> Download audio </a>
+            </audio>
+          </div>
           <ul class="todo__list">
             <li class="todo__item">
               <iframe
