@@ -92,8 +92,12 @@ section {
 
 .header__nav-wraper {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 93px;
+
+  max-width: 524px;
+  width: 100%;
+  /* gap: 93px; */
 }
 
 .logo__link {
@@ -114,14 +118,15 @@ section {
 }
 
 .navigation {
+  max-width: 290px;
+  width: 100%;
 }
 
 .navigation__list {
   display: flex;
-  /* flex-wrap: wrap; */
   align-items: center;
-  column-gap: 50px;
-  row-gap: 8px;
+  justify-content: space-between;
+  /* gap: 50px; */
 }
 
 .navigation__item {
