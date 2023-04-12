@@ -97,6 +97,7 @@ section {
 
   max-width: 524px;
   width: 100%;
+  gap: 8px;
   /* gap: 93px; */
 }
 
@@ -126,6 +127,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 4px;
   /* gap: 50px; */
 }
 
