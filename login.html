@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Реєстрація</title>
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__nav-wraper">
+          <p class="logo">
+            <a class="logo__link" href="./index.html"
+              >Web<span class="logo--header">Studio</span></a
+            >
+          </p>
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a class="navigation__link" href="./index.html">Студія</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a
+                  class="navigation__link navigation__link--active"
+                  href="./login.html"
+                  >Реєстрація</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <ul class="header__contacts-list">
+          <li class="header__contacts-item">
+            <a class="headed__contacts-link" href="mailto:info@devstudio.com">
+              <svg
+                class="header__icon header__icon--first"
+                width="16"
+                height="12"
+              >
+                <use href="./images/icons.svg#icon-email-2"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="header__contacts-item">
+            <a class="headed__contacts-link" href="tel:+390961111111">
+              <svg
+                class="header__icon header__icon--second"
+                width="10"
+                height="16"
+              >
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +39 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <form name="auth" class="auth">
+          <h2 class="auth__title">Реєстрація користувача</h2>
+
+          <div class="auth__block">
+            <h3 class="auth__subtitle">Особові дані:</h3>
+            <label class="auth__label">
+              Ім'я:
+              <input
+                type="text"
+                name="firstname"
+                placeholder="ім'я"
+                class="auth__field"
+              />
+            </label>
+            <label class="auth__label">
+              Прізвище:
+              <input
+                type="text"
+                name="lastuser"
+                placeholder="прізвище"
+                class="auth__field"
+              />
+            </label>
+
+            <div class="auth__sex">
+              Стать:
+              <div class="auth__sex--left">
+                <label class="auth__label--sex">
+                  Ж:
+                  <input type="radio" name="sex" />
+                </label>
+                <label class="auth__label--sex">
+                  Ч:
+                  <input type="radio" name="sex" />
+                </label>
+              </div>
+            </div>
+
+            <label class="auth__label">
+              Дата народження:
+              <input type="date" name="birthday" class="auth__field" />
+            </label>
+
+            <label class="auth__label">
+              Електронна пошта:
+              <input
+                type="email"
+                name="email"
+                placeholder="login@domain.ua"
+                class="auth__field"
+              />
+            </label>
+
+            <label class="auth__label">
+              Варіант оплати:
+              <select name="pay" class="auth__field auth__select">
+                <option value="private">Приватбанк</option>
+                <option value="raifizen">Райфайзен банк</option>
+                <option value="oschad">Ощадбанк</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="auth__block">
+            <h3 class="auth__subtitle">Аутентифікація:</h3>
+            <label class="auth__label">
+              Логін:
+              <input
+                type="text"
+                name="login"
+                placeholder="login"
+                class="auth__field"
+              />
+            </label>
+            <label class="auth__label">
+              Пароль:
+              <input
+                type="password"
+                name="password"
+                placeholder="password"
+                class="auth__field"
+              />
+            </label>
+          </div>
+
+          <button type="submit" class="atuh__save">Зберегти</button>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <p class="logo">
+        <a href="./index.html">Web<span class="logo--footer">Studio</span></a>
+      </p>
+      <address>м. Київ, пр-т Лесі Українки, 26</address>
+      <ul>
+        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li><a href="tel:+390961111111">+39 096 111 11 11</a></li>
+      </ul>
+    </footer>
+    <!--  -->
+  </body>
+</html>
