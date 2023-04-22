@@ -453,3 +453,122 @@ main .container {
 .atuh__save:focus {
   transform: scale(1.05);
 }
+
+@keyframes animate-one {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.1);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
+
+@keyframes animate-two {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.1);
+  }
+  60% {
+    transform: scale(1);
+  }
+}
+
+@keyframes animate-three {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  80% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes animate-four {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.ourfeatures__item--one {
+  animation-name: animate-one;
+  animation-duration: 8s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.ourfeatures__item--two {
+  animation-name: animate-two;
+  animation-duration: 8s;
+
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.ourfeatures__item--three {
+  animation-name: animate-three;
+  animation-duration: 8s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.ourfeatures__item--four {
+  animation-name: animate-four;
+  animation-duration: 8s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes hero-color {
+  0% {
+    color: #ffffff;
+  }
+  100% {
+    color: #dae42b;
+  }
+}
+
+.hero:hover .hero__h1 {
+  animation-name: hero-color;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
