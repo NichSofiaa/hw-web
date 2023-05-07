@@ -1222,7 +1222,11 @@ section {
   }
 }
 
-@media screen and (max-width: 379px) {
+@media screen and (max-width: 389px) {
+  .hero__h1 {
+    font-size: 20px;
+  }
+
   .auth__field,
   .auth__sex--left {
     width: 150px;
